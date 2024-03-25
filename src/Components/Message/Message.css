@@ -1,0 +1,27 @@
+.message {
+  margin: 10px 0;
+}
+
+.message-content {
+  color: white;
+  background-color: rgb(53, 53, 228);
+  padding: 10px 30px;
+  border-radius: 100px 100px 100px 10px;
+}
+
+.message-text {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.message-sender {
+  margin: 5px 0 0;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.message-date {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}

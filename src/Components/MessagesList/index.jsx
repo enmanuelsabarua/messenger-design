@@ -15,7 +15,7 @@ const MessagesList = () => {
     }, []);
 
     return (
-        <div>
+        <div className='message-list'>
             {messages.map(message => <Message key={message.id} message={message} />)}
         </div>
     )
