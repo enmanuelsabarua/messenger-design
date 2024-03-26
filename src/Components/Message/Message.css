@@ -3,32 +3,35 @@
   position: relative;
 }
 
-.message-content {
-  color: white;
-}
-
 .message-normal {
   position: relative;
   z-index: 1;
 }
 
-.message-content-bg-color {
-  padding: 10px 60px 10px 30px;
-  border-radius: 50px 50px 50px 10px;
-  background-color: rgb(53, 53, 228);
+.message-content {
+  color: white;
+  padding: 8px 30px 12px 30px;
+  border-radius: 40px 40px 40px 10px;
+  background-color: rgb(99, 99, 99);
 }
 
 .message-content-reply {
-  background-color: rgb(41, 41, 164);
+  filter: saturate(60%);
   right: -20px;
   bottom: -10px;
   position: relative;
   width: fit-content;
+  transition: 0.3s ease;
+}
+
+.message-content-reply:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .message-text {
   font-size: 18px;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
 }
 
 .message-sender {
@@ -37,8 +40,28 @@
   font-weight: 600;
 }
 
+.platform {
+  font-size: 12px;
+  position: absolute;
+  bottom: -5px;
+  right: 30px;
+  font-weight: 600;
+}
+
 .message-date {
   margin-top: 5px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.instagram {
+  background-color: #e1306c;
+}
+
+.facebook {
+  background-color: #1877f2;
 }
