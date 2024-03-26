@@ -43,7 +43,7 @@ const MessagesList = () => {
                 <a onClick={() => changeCategory('all messages')} className={selectedCategory === 'all messages' ? 'selected-category' : null}>All messages</a>
                 {uniquePlatformArr.map(platform => <a key={platform} onClick={() => changeCategory(platform)} className={selectedCategory === platform ? 'selected-category' : null} >{platform}</a>)}
             </nav>
-            {filteredMessages.map(message => <Message key={message.id} message={message} messages={messages} />)}
+            {filteredMessages.map(message => <Message key={message.id} message={message} messages={messages} selectedCategory={selectedCategory} setSelectedCategory={changeCategory} />)}
         </div>
     )
 }

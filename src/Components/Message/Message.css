@@ -24,6 +24,11 @@
   transition: 0.3s ease;
 }
 
+.message-content-reply .platform {
+  bottom: 3px;
+  font-size: 10px;
+}
+
 .message-content-reply:hover {
   cursor: pointer;
   transform: scale(1.1);
