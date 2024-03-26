@@ -1,17 +1,34 @@
 .message {
-  margin: 10px 0;
+  margin: 0;
+  position: relative;
 }
 
 .message-content {
   color: white;
+}
+
+.message-normal {
+  position: relative;
+  z-index: 1;
+}
+
+.message-content-bg-color {
+  padding: 10px 60px 10px 30px;
+  border-radius: 50px 50px 50px 10px;
   background-color: rgb(53, 53, 228);
-  padding: 10px 30px;
-  border-radius: 100px 100px 100px 10px;
+}
+
+.message-content-reply {
+  background-color: rgb(41, 41, 164);
+  right: -20px;
+  bottom: -10px;
+  position: relative;
+  width: fit-content;
 }
 
 .message-text {
   font-size: 18px;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 
 .message-sender {

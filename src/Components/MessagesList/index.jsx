@@ -9,14 +9,15 @@ const MessagesList = () => {
 
     useEffect(() => {
         axios
-            .get('https://www.dev.readychatai.com/messages_json')
+            .get('http://www.app.readychatai.com/data')
             .then(res => setMessages(res.data))
             .catch(error => setMessages(error));
     }, []);
 
     return (
         <div className='message-list'>
-            {messages.map(message => <Message key={message.id} message={message} />)}
+            <h1>Messages</h1>
+            {messages.map(message => <Message key={message.id} message={message} messages={messages} />)}
         </div>
     )
 }

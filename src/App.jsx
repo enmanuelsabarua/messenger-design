@@ -3,7 +3,7 @@ import MessagesList from './Components/MessagesList';
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <MessagesList />
     </div>
   )
